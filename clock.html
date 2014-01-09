@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+	
+<title>The Analog Clocks Library By Dilusha</title>
+
+<script type="text/javascript" src="js/Raphael-1-4-3.js"></script>
+<script type="text/javascript" src="js/Clocker1.0.js"></script>
+
+<script>
+
+window.onload=function(){
+	
+	// Normal Theme Setter
+Clocker.SetTheme({
+	ThemeName:"blue"	
+});
+
+//Overwritten Options : With defaults mixed
+Clocker.SetOptions({
+//	HourStroke:"green"	
+	Clocks:"1,2,3"
+});
+//var Clocker="";
+var clock1 = function(){
+	
+		//Default User Time Disaply
+		
+	    Clocker.CurrentClock("clock1");
+   		
+		//Custom Parametrized Time
+		Clocker.CustomClock("clock2");
+   		Clocker.setTime("10:30:00");
+			//Custom Parametrized Time
+		Clocker.CustomClock1("clock3");
+   		Clocker.setTime1("11:30:00");
+	
+		//ClockerJs Usage
+
+	
+	
+   		//Clocker.setTime1("6:40:00");
+
+}
+
+//Execute
+clock1();
+}
+
+
+</script>
+
+</head>
+<body>
+
+<h3>Clocker - JS</h3>
+
+
+<div id="clock" class="clock">
+
+<div id="clock1"></div>
+
+
+<div id="clock2"></div>
+<div id="clock3"></div>
+<div id="clock5"></div>
+<div id="clock6"></div>
+
+</body>
+</html>
